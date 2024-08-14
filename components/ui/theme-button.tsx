@@ -1,8 +1,8 @@
 "use client";
 
-import * as React from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
+import * as React from "react";
 
 import { Button } from "@/components/ui/button";
 
@@ -17,12 +17,7 @@ export function ModeButton() {
         variant="secondary"
         size="sm"
       >
-       
-        {theme === "light" ? (
-          <Moon  />
-        ) : (
-          <Sun  />
-        )}
+        {theme === "light" ? <Moon /> : <Sun />}
         <span className="sr-only">Toggle theme</span>
       </Button>
     </>
