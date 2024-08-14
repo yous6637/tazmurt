@@ -1,6 +1,8 @@
 "use server";
 
-import { ID, InputFile, Query } from "node-appwrite";
+import { ID, InputFile, Query } from "node-appwrite"; // External dependencies
+
+import { Patient } from "@/types/appwrite.types"; // Internal dependencies
 
 import {
   BUCKET_ID,
@@ -14,7 +16,6 @@ import {
 } from "../appwrite.config";
 
 import { parseStringify } from "../utils";
-import { Patient } from "@/types/appwrite.types";
 
 // CREATE APPWRITE USER
 export const createUser = async (user: CreateUserParams) => {
